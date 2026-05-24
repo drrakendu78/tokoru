@@ -1,0 +1,40 @@
+# Node / Vite
+node_modules/
+dist/
+.vite/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# TypeScript build artifacts
+*.tsbuildinfo
+
+# Rust / Cargo / Tauri
+src-tauri/target/
+src-tauri/gen/schemas/
+
+# aidesigner runs (mockups + previews, not source)
+.aidesigner/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Tauri signing keys (NEVER commit)
+*.pem
+*.key
+tauri-signing-key

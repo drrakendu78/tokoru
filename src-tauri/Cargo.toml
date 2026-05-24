@@ -1,0 +1,36 @@
+[package]
+name = "tokoru"
+version = "0.1.0"
+description = "Tokoru - Bring your whole library to Steam."
+authors = ["StarTrad"]
+edition = "2021"
+
+[lib]
+name = "tokoru_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+tauri-plugin-shell = "2"
+tauri-plugin-log = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+log = "0.4"
+rusqlite = { version = "0.31", features = ["bundled"] }
+reqwest = { version = "0.12", features = ["json", "rustls-tls"], default-features = false }
+tokio = { version = "1", features = ["full"] }
+walkdir = "2"
+regex = "1"
+chrono = "0.4"
+glob = "0.3"
+winreg = "0.55"
+sysinfo = "0.30"
+percent-encoding = "2.3"
+base64 = "0.22"
+tokio-tungstenite = "0.24"
+futures-util = "0.3"
