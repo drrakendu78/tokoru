@@ -23,6 +23,10 @@
 </p>
 
 <p align="center">
+  <strong>🇬🇧 English</strong> · <a href="README.fr.md">🇫🇷 Français</a>
+</p>
+
+<p align="center">
   <img src="docs/screenshots/library.png" alt="Tokoru — unified library view across Steam, Epic, GOG, Ubisoft, EA" width="820" />
 </p>
 
